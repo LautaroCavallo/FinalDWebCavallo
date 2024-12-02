@@ -308,6 +308,19 @@ body.dark-mode .experience h2 {
     background-color: #0056b3;
 }
 
+/* Curriculum */
+.curriculum-content ul {
+    list-style-type: none; /* O usa 'disc' o 'circle' si prefieres */
+    padding: 0;
+}
+
+.curriculum-content ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
 /* Estilos para Modo Oscuro */
 
 /* Modo Oscuro */
