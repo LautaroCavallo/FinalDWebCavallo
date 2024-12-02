@@ -91,9 +91,9 @@ header nav {
 
 /* Botón de Modo Oscuro */
 #darkModeToggle {
-    position: fixed; /* Fija el botón en la pantalla */
-    top: 0px; /* Alinea desde la parte inferior */
-    right: 1px; /* Alinea desde la derecha */
+    position: fixed;
+    top: 0px;
+    right: 1px;
     z-index: 1001;
     background: none;
     border: none;
@@ -154,6 +154,11 @@ header.dark-mode .light-mode-icon {
 .experience {
     padding: 40px 20px;
     background-color: #f9f9f9;
+}
+
+.experience h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .experience h2 {
