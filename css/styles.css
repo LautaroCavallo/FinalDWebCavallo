@@ -308,9 +308,9 @@ body.dark-mode .experience h2 {
     background-color: #0056b3;
 }
 
-/* Curriculum */
+/* Curriculum content*/
 .curriculum-content ul {
-    list-style-type: none; /* O usa 'disc' o 'circle' si prefieres */
+    list-style-type: none;
     padding: 0;
 }
 
