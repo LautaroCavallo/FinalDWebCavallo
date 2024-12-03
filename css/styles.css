@@ -12,6 +12,12 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -28,13 +34,13 @@ header {
     padding: 10px 0;
     position: relative;
     z-index: 1000;
+    overflow-y: auto;
 }
 
 header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     padding: 0 20px;
 }
 
@@ -69,6 +75,7 @@ header nav {
     flex-direction: row;
     gap: 20px;
     transition: all 0.3s ease-in-out;
+    overflow-y: auto;
 }
 
 .nav-menu li {
@@ -183,14 +190,14 @@ body.dark-mode .experience h2 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 20px auto;
+    margin: auto;
     max-width: 1200px;
     padding: 10px;
 }
 
 .card {
-    width: 300px;
-    height: 350px;
+    width: 15rem;
+    height: 20rem;
     perspective: 1000px;
     position: relative;
     margin: 10px;
@@ -402,8 +409,8 @@ footer {
     background-color: #0056b3;
 }
 
-/* Menú en pantallas pequeñas */
-@media (max-width: 768px) {
+/* Responsividad para pantallas medianas (tablets) */
+@media (max-width: 800px) {
     header nav{
         justify-content:left;
     }
@@ -445,5 +452,60 @@ footer {
         width: 35px;
         height: 35px;
         transition: opacity 0.3s ease;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .experience-cards {
+        flex-direction: column;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}
+
+/* Responsividad para pantallas pequeñas (celulares) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    .experience-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 }
